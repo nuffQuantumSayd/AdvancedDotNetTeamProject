@@ -31,11 +31,11 @@
             LbMovieList = new ListBox();
             label1 = new Label();
             comboBox1 = new ComboBox();
-            BtnAddMovie = new Button();
-            BtnUpdateMovie = new Button();
-            BtnDeleteMovie = new Button();
+            BtnAdd = new Button();
+            BtnUpdate = new Button();
+            BtnDelete = new Button();
             BtnMovieWithActor = new Button();
-            BtnSeeMovie = new Button();
+            BtnSee = new Button();
             groupBox1 = new GroupBox();
             groupBox1.SuspendLayout();
             SuspendLayout();
@@ -66,32 +66,32 @@
             comboBox1.Size = new Size(269, 28);
             comboBox1.TabIndex = 2;
             // 
-            // BtnAddMovie
+            // BtnAdd
             // 
-            BtnAddMovie.Location = new Point(27, 94);
-            BtnAddMovie.Name = "BtnAddMovie";
-            BtnAddMovie.Size = new Size(165, 62);
-            BtnAddMovie.TabIndex = 3;
-            BtnAddMovie.Text = "Add Movie";
-            BtnAddMovie.UseVisualStyleBackColor = true;
+            BtnAdd.Location = new Point(27, 94);
+            BtnAdd.Name = "BtnAdd";
+            BtnAdd.Size = new Size(165, 62);
+            BtnAdd.TabIndex = 3;
+            BtnAdd.Text = "Add Movie";
+            BtnAdd.UseVisualStyleBackColor = true;
             // 
-            // BtnUpdateMovie
+            // BtnUpdate
             // 
-            BtnUpdateMovie.Location = new Point(27, 162);
-            BtnUpdateMovie.Name = "BtnUpdateMovie";
-            BtnUpdateMovie.Size = new Size(165, 62);
-            BtnUpdateMovie.TabIndex = 4;
-            BtnUpdateMovie.Text = "Update Movie";
-            BtnUpdateMovie.UseVisualStyleBackColor = true;
+            BtnUpdate.Location = new Point(27, 162);
+            BtnUpdate.Name = "BtnUpdate";
+            BtnUpdate.Size = new Size(165, 62);
+            BtnUpdate.TabIndex = 4;
+            BtnUpdate.Text = "Update Movie";
+            BtnUpdate.UseVisualStyleBackColor = true;
             // 
-            // BtnDeleteMovie
+            // BtnDelete
             // 
-            BtnDeleteMovie.Location = new Point(27, 230);
-            BtnDeleteMovie.Name = "BtnDeleteMovie";
-            BtnDeleteMovie.Size = new Size(165, 62);
-            BtnDeleteMovie.TabIndex = 5;
-            BtnDeleteMovie.Text = "Delete Movie";
-            BtnDeleteMovie.UseVisualStyleBackColor = true;
+            BtnDelete.Location = new Point(27, 230);
+            BtnDelete.Name = "BtnDelete";
+            BtnDelete.Size = new Size(165, 62);
+            BtnDelete.TabIndex = 5;
+            BtnDelete.Text = "Delete Movie";
+            BtnDelete.UseVisualStyleBackColor = true;
             // 
             // BtnMovieWithActor
             // 
@@ -102,21 +102,21 @@
             BtnMovieWithActor.Text = "Manage Movie Actors";
             BtnMovieWithActor.UseVisualStyleBackColor = true;
             // 
-            // BtnSeeMovie
+            // BtnSee
             // 
-            BtnSeeMovie.Location = new Point(27, 26);
-            BtnSeeMovie.Name = "BtnSeeMovie";
-            BtnSeeMovie.Size = new Size(165, 62);
-            BtnSeeMovie.TabIndex = 7;
-            BtnSeeMovie.Text = "See Movie Info";
-            BtnSeeMovie.UseVisualStyleBackColor = true;
+            BtnSee.Location = new Point(27, 26);
+            BtnSee.Name = "BtnSee";
+            BtnSee.Size = new Size(165, 62);
+            BtnSee.TabIndex = 7;
+            BtnSee.Text = "See Movie Info";
+            BtnSee.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(BtnAddMovie);
-            groupBox1.Controls.Add(BtnSeeMovie);
-            groupBox1.Controls.Add(BtnDeleteMovie);
-            groupBox1.Controls.Add(BtnUpdateMovie);
+            groupBox1.Controls.Add(BtnAdd);
+            groupBox1.Controls.Add(BtnSee);
+            groupBox1.Controls.Add(BtnDelete);
+            groupBox1.Controls.Add(BtnUpdate);
             groupBox1.Location = new Point(389, 12);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(219, 304);
@@ -146,11 +146,11 @@
         private ListBox LbMovieList;
         private Label label1;
         private ComboBox comboBox1;
-        private Button BtnAddMovie;
-        private Button BtnUpdateMovie;
-        private Button BtnDeleteMovie;
+        private Button BtnAdd;
+        private Button BtnUpdate;
+        private Button BtnDelete;
         private Button BtnMovieWithActor;
-        private Button BtnSeeMovie;
+        private Button BtnSee;
         private GroupBox groupBox1;
     }
 }

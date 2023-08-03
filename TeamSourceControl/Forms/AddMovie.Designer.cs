@@ -33,20 +33,20 @@
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
-            TxtTitle = new TextBox();
-            TxtGenre = new ComboBox();
-            NudHours = new NumericUpDown();
-            NudMinutes = new NumericUpDown();
+            TxtAddTitle = new TextBox();
+            TxtAddGenre = new ComboBox();
+            NudAddHours = new NumericUpDown();
+            NudAddMinutes = new NumericUpDown();
             label6 = new Label();
             label7 = new Label();
-            DtpRelease = new DateTimePicker();
-            TxtStatus = new ComboBox();
+            DtpAddRelease = new DateTimePicker();
+            TxtAddStatus = new ComboBox();
             fileSystemWatcher1 = new FileSystemWatcher();
             BtnAddMovie = new Button();
-            BtnClear = new Button();
-            BtnBack = new Button();
-            ((System.ComponentModel.ISupportInitialize)NudHours).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)NudMinutes).BeginInit();
+            BtnAddClear = new Button();
+            BtnAddBack = new Button();
+            ((System.ComponentModel.ISupportInitialize)NudAddHours).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)NudAddMinutes).BeginInit();
             ((System.ComponentModel.ISupportInitialize)fileSystemWatcher1).BeginInit();
             SuspendLayout();
             // 
@@ -95,34 +95,34 @@
             label5.TabIndex = 4;
             label5.Text = "Watch Status:";
             // 
-            // TxtTitle
+            // TxtAddTitle
             // 
-            TxtTitle.Location = new Point(124, 12);
-            TxtTitle.Name = "TxtTitle";
-            TxtTitle.Size = new Size(183, 27);
-            TxtTitle.TabIndex = 5;
+            TxtAddTitle.Location = new Point(124, 12);
+            TxtAddTitle.Name = "TxtAddTitle";
+            TxtAddTitle.Size = new Size(183, 27);
+            TxtAddTitle.TabIndex = 5;
             // 
-            // TxtGenre
+            // TxtAddGenre
             // 
-            TxtGenre.FormattingEnabled = true;
-            TxtGenre.Location = new Point(124, 64);
-            TxtGenre.Name = "TxtGenre";
-            TxtGenre.Size = new Size(183, 28);
-            TxtGenre.TabIndex = 6;
+            TxtAddGenre.FormattingEnabled = true;
+            TxtAddGenre.Location = new Point(124, 64);
+            TxtAddGenre.Name = "TxtAddGenre";
+            TxtAddGenre.Size = new Size(183, 28);
+            TxtAddGenre.TabIndex = 6;
             // 
-            // NudHours
+            // NudAddHours
             // 
-            NudHours.Location = new Point(124, 222);
-            NudHours.Name = "NudHours";
-            NudHours.Size = new Size(54, 27);
-            NudHours.TabIndex = 7;
+            NudAddHours.Location = new Point(124, 222);
+            NudAddHours.Name = "NudAddHours";
+            NudAddHours.Size = new Size(54, 27);
+            NudAddHours.TabIndex = 7;
             // 
-            // NudMinutes
+            // NudAddMinutes
             // 
-            NudMinutes.Location = new Point(218, 222);
-            NudMinutes.Name = "NudMinutes";
-            NudMinutes.Size = new Size(49, 27);
-            NudMinutes.TabIndex = 8;
+            NudAddMinutes.Location = new Point(218, 222);
+            NudAddMinutes.Name = "NudAddMinutes";
+            NudAddMinutes.Size = new Size(49, 27);
+            NudAddMinutes.TabIndex = 8;
             // 
             // label6
             // 
@@ -144,22 +144,22 @@
             label7.TabIndex = 10;
             label7.Text = "min";
             // 
-            // DtpRelease
+            // DtpAddRelease
             // 
-            DtpRelease.CustomFormat = "  MM / dd / yyyy";
-            DtpRelease.Format = DateTimePickerFormat.Custom;
-            DtpRelease.Location = new Point(124, 173);
-            DtpRelease.Name = "DtpRelease";
-            DtpRelease.Size = new Size(183, 27);
-            DtpRelease.TabIndex = 11;
+            DtpAddRelease.CustomFormat = "  MM / dd / yyyy";
+            DtpAddRelease.Format = DateTimePickerFormat.Custom;
+            DtpAddRelease.Location = new Point(124, 173);
+            DtpAddRelease.Name = "DtpAddRelease";
+            DtpAddRelease.Size = new Size(183, 27);
+            DtpAddRelease.TabIndex = 11;
             // 
-            // TxtStatus
+            // TxtAddStatus
             // 
-            TxtStatus.FormattingEnabled = true;
-            TxtStatus.Location = new Point(124, 117);
-            TxtStatus.Name = "TxtStatus";
-            TxtStatus.Size = new Size(183, 28);
-            TxtStatus.TabIndex = 12;
+            TxtAddStatus.FormattingEnabled = true;
+            TxtAddStatus.Location = new Point(124, 117);
+            TxtAddStatus.Name = "TxtAddStatus";
+            TxtAddStatus.Size = new Size(183, 28);
+            TxtAddStatus.TabIndex = 12;
             // 
             // fileSystemWatcher1
             // 
@@ -175,40 +175,40 @@
             BtnAddMovie.Text = "Add to Database";
             BtnAddMovie.UseVisualStyleBackColor = true;
             // 
-            // BtnClear
+            // BtnAddClear
             // 
-            BtnClear.Location = new Point(341, 93);
-            BtnClear.Name = "BtnClear";
-            BtnClear.Size = new Size(168, 46);
-            BtnClear.TabIndex = 14;
-            BtnClear.Text = "Clear Form";
-            BtnClear.UseVisualStyleBackColor = true;
+            BtnAddClear.Location = new Point(341, 93);
+            BtnAddClear.Name = "BtnAddClear";
+            BtnAddClear.Size = new Size(168, 46);
+            BtnAddClear.TabIndex = 14;
+            BtnAddClear.Text = "Clear Form";
+            BtnAddClear.UseVisualStyleBackColor = true;
             // 
-            // BtnBack
+            // BtnAddBack
             // 
-            BtnBack.Location = new Point(428, 212);
-            BtnBack.Name = "BtnBack";
-            BtnBack.Size = new Size(75, 37);
-            BtnBack.TabIndex = 15;
-            BtnBack.Text = "Back";
-            BtnBack.UseVisualStyleBackColor = true;
+            BtnAddBack.Location = new Point(428, 212);
+            BtnAddBack.Name = "BtnAddBack";
+            BtnAddBack.Size = new Size(75, 37);
+            BtnAddBack.TabIndex = 15;
+            BtnAddBack.Text = "Back";
+            BtnAddBack.UseVisualStyleBackColor = true;
             // 
             // AddMovie
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(528, 273);
-            Controls.Add(BtnBack);
-            Controls.Add(BtnClear);
+            Controls.Add(BtnAddBack);
+            Controls.Add(BtnAddClear);
             Controls.Add(BtnAddMovie);
-            Controls.Add(TxtStatus);
-            Controls.Add(DtpRelease);
+            Controls.Add(TxtAddStatus);
+            Controls.Add(DtpAddRelease);
             Controls.Add(label7);
             Controls.Add(label6);
-            Controls.Add(NudMinutes);
-            Controls.Add(NudHours);
-            Controls.Add(TxtGenre);
-            Controls.Add(TxtTitle);
+            Controls.Add(NudAddMinutes);
+            Controls.Add(NudAddHours);
+            Controls.Add(TxtAddGenre);
+            Controls.Add(TxtAddTitle);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -216,8 +216,8 @@
             Controls.Add(label1);
             Name = "AddMovie";
             Text = "Add Movie";
-            ((System.ComponentModel.ISupportInitialize)NudHours).EndInit();
-            ((System.ComponentModel.ISupportInitialize)NudMinutes).EndInit();
+            ((System.ComponentModel.ISupportInitialize)NudAddHours).EndInit();
+            ((System.ComponentModel.ISupportInitialize)NudAddMinutes).EndInit();
             ((System.ComponentModel.ISupportInitialize)fileSystemWatcher1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -230,17 +230,17 @@
         private Label label3;
         private Label label4;
         private Label label5;
-        private TextBox TxtTitle;
-        private ComboBox TxtGenre;
-        private NumericUpDown NudHours;
-        private NumericUpDown NudMinutes;
+        private TextBox TxtAddTitle;
+        private ComboBox TxtAddGenre;
+        private NumericUpDown NudAddHours;
+        private NumericUpDown NudAddMinutes;
         private Label label6;
         private Label label7;
-        private DateTimePicker DtpRelease;
-        private ComboBox TxtStatus;
+        private DateTimePicker DtpAddRelease;
+        private ComboBox TxtAddStatus;
         private FileSystemWatcher fileSystemWatcher1;
         private Button BtnAddMovie;
-        private Button BtnBack;
-        private Button BtnClear;
+        private Button BtnAddBack;
+        private Button BtnAddClear;
     }
 }

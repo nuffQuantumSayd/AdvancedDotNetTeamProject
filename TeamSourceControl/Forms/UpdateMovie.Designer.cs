@@ -197,7 +197,7 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Name = "UpdateMovie";
-            Text = "UpdateMovie";
+            Text = "Update Movie";
             ((System.ComponentModel.ISupportInitialize)NudUpdateMinutes).EndInit();
             ((System.ComponentModel.ISupportInitialize)NudUpdateHours).EndInit();
             ResumeLayout(false);
