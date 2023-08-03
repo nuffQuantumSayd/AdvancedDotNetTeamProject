@@ -34,7 +34,7 @@
             BtnAddMovie = new Button();
             BtnUpdateMovie = new Button();
             BtnDeleteMovie = new Button();
-            BtnManageMovieActors = new Button();
+            BtnMovieWithActor = new Button();
             BtnSeeMovie = new Button();
             groupBox1 = new GroupBox();
             groupBox1.SuspendLayout();
@@ -93,14 +93,14 @@
             BtnDeleteMovie.Text = "Delete Movie";
             BtnDeleteMovie.UseVisualStyleBackColor = true;
             // 
-            // BtnManageMovieActors
+            // BtnMovieWithActor
             // 
-            BtnManageMovieActors.Location = new Point(389, 333);
-            BtnManageMovieActors.Name = "BtnManageMovieActors";
-            BtnManageMovieActors.Size = new Size(219, 62);
-            BtnManageMovieActors.TabIndex = 6;
-            BtnManageMovieActors.Text = "Manage Movie Actors";
-            BtnManageMovieActors.UseVisualStyleBackColor = true;
+            BtnMovieWithActor.Location = new Point(389, 333);
+            BtnMovieWithActor.Name = "BtnMovieWithActor";
+            BtnMovieWithActor.Size = new Size(219, 62);
+            BtnMovieWithActor.TabIndex = 6;
+            BtnMovieWithActor.Text = "Manage Movie Actors";
+            BtnMovieWithActor.UseVisualStyleBackColor = true;
             // 
             // BtnSeeMovie
             // 
@@ -124,17 +124,17 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Movie Functions";
             // 
-            // Form1
+            // MovieManager
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(641, 418);
             Controls.Add(groupBox1);
-            Controls.Add(BtnManageMovieActors);
+            Controls.Add(BtnMovieWithActor);
             Controls.Add(comboBox1);
             Controls.Add(label1);
             Controls.Add(LbMovieList);
-            Name = "Form1";
+            Name = "MovieManager";
             Text = "Movie Manager";
             groupBox1.ResumeLayout(false);
             ResumeLayout(false);
@@ -149,7 +149,7 @@
         private Button BtnAddMovie;
         private Button BtnUpdateMovie;
         private Button BtnDeleteMovie;
-        private Button BtnManageMovieActors;
+        private Button BtnMovieWithActor;
         private Button BtnSeeMovie;
         private GroupBox groupBox1;
     }
