@@ -1,6 +1,6 @@
 ﻿namespace TeamSourceControl
 {
-    partial class Form1
+    partial class MovieManager
     {
         /// <summary>
         ///  Required designer variable.
