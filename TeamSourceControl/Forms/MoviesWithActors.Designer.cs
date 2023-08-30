@@ -33,8 +33,7 @@
             label2 = new Label();
             label3 = new Label();
             BtnPair = new Button();
-            BtnManageActors = new Button();
-            BtnMoviesActorsBack = new Button();
+            BtnMovieActorBack = new Button();
             SuspendLayout();
             // 
             // CbMovie
@@ -80,31 +79,21 @@
             BtnPair.Text = "Pair Together";
             BtnPair.UseVisualStyleBackColor = true;
             // 
-            // BtnManageActors
+            // BtnMovieActorBack
             // 
-            BtnManageActors.Location = new Point(289, 28);
-            BtnManageActors.Name = "BtnManageActors";
-            BtnManageActors.Size = new Size(141, 74);
-            BtnManageActors.TabIndex = 6;
-            BtnManageActors.Text = "Manage Actors";
-            BtnManageActors.UseVisualStyleBackColor = true;
-            // 
-            // BtnMoviesActorsBack
-            // 
-            BtnMoviesActorsBack.Location = new Point(289, 118);
-            BtnMoviesActorsBack.Name = "BtnMoviesActorsBack";
-            BtnMoviesActorsBack.Size = new Size(141, 37);
-            BtnMoviesActorsBack.TabIndex = 39;
-            BtnMoviesActorsBack.Text = "Back";
-            BtnMoviesActorsBack.UseVisualStyleBackColor = true;
+            BtnMovieActorBack.Location = new Point(271, 118);
+            BtnMovieActorBack.Name = "BtnMovieActorBack";
+            BtnMovieActorBack.Size = new Size(75, 37);
+            BtnMovieActorBack.TabIndex = 17;
+            BtnMovieActorBack.Text = "Back";
+            BtnMovieActorBack.UseVisualStyleBackColor = true;
             // 
             // MoviesWithActors
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(455, 186);
-            Controls.Add(BtnMoviesActorsBack);
-            Controls.Add(BtnManageActors);
+            ClientSize = new Size(371, 174);
+            Controls.Add(BtnMovieActorBack);
             Controls.Add(BtnPair);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -123,7 +112,6 @@
         private Label label2;
         private Label label3;
         private Button BtnPair;
-        private Button BtnManageActors;
-        private Button BtnMoviesActorsBack;
+        private Button BtnMovieActorBack;
     }
 }

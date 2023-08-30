@@ -37,6 +37,7 @@
             BtnMovieWithActor = new Button();
             BtnSee = new Button();
             groupBox1 = new GroupBox();
+            BtnActor = new Button();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -46,7 +47,7 @@
             LbMovieList.ItemHeight = 20;
             LbMovieList.Location = new Point(33, 71);
             LbMovieList.Name = "LbMovieList";
-            LbMovieList.Size = new Size(337, 324);
+            LbMovieList.Size = new Size(337, 364);
             LbMovieList.TabIndex = 0;
             // 
             // label1
@@ -95,11 +96,11 @@
             // 
             // BtnMovieWithActor
             // 
-            BtnMovieWithActor.Location = new Point(389, 333);
+            BtnMovieWithActor.Location = new Point(389, 339);
             BtnMovieWithActor.Name = "BtnMovieWithActor";
-            BtnMovieWithActor.Size = new Size(219, 62);
+            BtnMovieWithActor.Size = new Size(219, 46);
             BtnMovieWithActor.TabIndex = 6;
-            BtnMovieWithActor.Text = "Manage Movie Actors";
+            BtnMovieWithActor.Text = "Movie Actor Pairing";
             BtnMovieWithActor.UseVisualStyleBackColor = true;
             // 
             // BtnSee
@@ -124,11 +125,21 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Movie Functions";
             // 
+            // BtnActor
+            // 
+            BtnActor.Location = new Point(389, 391);
+            BtnActor.Name = "BtnActor";
+            BtnActor.Size = new Size(219, 44);
+            BtnActor.TabIndex = 9;
+            BtnActor.Text = "Manage Actors";
+            BtnActor.UseVisualStyleBackColor = true;
+            // 
             // MovieManager
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(641, 418);
+            ClientSize = new Size(641, 469);
+            Controls.Add(BtnActor);
             Controls.Add(groupBox1);
             Controls.Add(BtnMovieWithActor);
             Controls.Add(CbSort);
@@ -152,5 +163,6 @@
         private Button BtnMovieWithActor;
         private Button BtnSee;
         private GroupBox groupBox1;
+        private Button BtnActor;
     }
 }
