@@ -30,7 +30,7 @@
         {
             LbMovieList = new ListBox();
             label1 = new Label();
-            comboBox1 = new ComboBox();
+            CbSort = new ComboBox();
             BtnAdd = new Button();
             BtnUpdate = new Button();
             BtnDelete = new Button();
@@ -58,13 +58,13 @@
             label1.TabIndex = 1;
             label1.Text = "Sort By:";
             // 
-            // comboBox1
+            // CbSort
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(101, 23);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(269, 28);
-            comboBox1.TabIndex = 2;
+            CbSort.FormattingEnabled = true;
+            CbSort.Location = new Point(101, 23);
+            CbSort.Name = "CbSort";
+            CbSort.Size = new Size(269, 28);
+            CbSort.TabIndex = 2;
             // 
             // BtnAdd
             // 
@@ -131,7 +131,7 @@
             ClientSize = new Size(641, 418);
             Controls.Add(groupBox1);
             Controls.Add(BtnMovieWithActor);
-            Controls.Add(comboBox1);
+            Controls.Add(CbSort);
             Controls.Add(label1);
             Controls.Add(LbMovieList);
             Name = "MovieManager";
@@ -145,7 +145,7 @@
 
         private ListBox LbMovieList;
         private Label label1;
-        private ComboBox comboBox1;
+        private ComboBox CbSort;
         private Button BtnAdd;
         private Button BtnUpdate;
         private Button BtnDelete;

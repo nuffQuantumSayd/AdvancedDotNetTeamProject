@@ -34,13 +34,13 @@
             label4 = new Label();
             label5 = new Label();
             TxtAddTitle = new TextBox();
-            TxtAddGenre = new ComboBox();
+            CbAddGenre = new ComboBox();
             NudAddHours = new NumericUpDown();
             NudAddMinutes = new NumericUpDown();
             label6 = new Label();
             label7 = new Label();
             DtpAddRelease = new DateTimePicker();
-            TxtAddStatus = new ComboBox();
+            CbAddStatus = new ComboBox();
             fileSystemWatcher1 = new FileSystemWatcher();
             BtnAddMovie = new Button();
             BtnAddClear = new Button();
@@ -102,13 +102,13 @@
             TxtAddTitle.Size = new Size(183, 27);
             TxtAddTitle.TabIndex = 5;
             // 
-            // TxtAddGenre
+            // CbAddGenre
             // 
-            TxtAddGenre.FormattingEnabled = true;
-            TxtAddGenre.Location = new Point(124, 64);
-            TxtAddGenre.Name = "TxtAddGenre";
-            TxtAddGenre.Size = new Size(183, 28);
-            TxtAddGenre.TabIndex = 6;
+            CbAddGenre.FormattingEnabled = true;
+            CbAddGenre.Location = new Point(124, 64);
+            CbAddGenre.Name = "CbAddGenre";
+            CbAddGenre.Size = new Size(183, 28);
+            CbAddGenre.TabIndex = 6;
             // 
             // NudAddHours
             // 
@@ -153,13 +153,13 @@
             DtpAddRelease.Size = new Size(183, 27);
             DtpAddRelease.TabIndex = 11;
             // 
-            // TxtAddStatus
+            // CbAddStatus
             // 
-            TxtAddStatus.FormattingEnabled = true;
-            TxtAddStatus.Location = new Point(124, 117);
-            TxtAddStatus.Name = "TxtAddStatus";
-            TxtAddStatus.Size = new Size(183, 28);
-            TxtAddStatus.TabIndex = 12;
+            CbAddStatus.FormattingEnabled = true;
+            CbAddStatus.Location = new Point(124, 117);
+            CbAddStatus.Name = "CbAddStatus";
+            CbAddStatus.Size = new Size(183, 28);
+            CbAddStatus.TabIndex = 12;
             // 
             // fileSystemWatcher1
             // 
@@ -201,13 +201,13 @@
             Controls.Add(BtnAddBack);
             Controls.Add(BtnAddClear);
             Controls.Add(BtnAddMovie);
-            Controls.Add(TxtAddStatus);
+            Controls.Add(CbAddStatus);
             Controls.Add(DtpAddRelease);
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(NudAddMinutes);
             Controls.Add(NudAddHours);
-            Controls.Add(TxtAddGenre);
+            Controls.Add(CbAddGenre);
             Controls.Add(TxtAddTitle);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -231,13 +231,13 @@
         private Label label4;
         private Label label5;
         private TextBox TxtAddTitle;
-        private ComboBox TxtAddGenre;
+        private ComboBox CbAddGenre;
         private NumericUpDown NudAddHours;
         private NumericUpDown NudAddMinutes;
         private Label label6;
         private Label label7;
         private DateTimePicker DtpAddRelease;
-        private ComboBox TxtAddStatus;
+        private ComboBox CbAddStatus;
         private FileSystemWatcher fileSystemWatcher1;
         private Button BtnAddMovie;
         private Button BtnAddBack;
