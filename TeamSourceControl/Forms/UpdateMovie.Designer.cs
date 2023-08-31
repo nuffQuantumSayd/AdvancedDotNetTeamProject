@@ -55,6 +55,7 @@
             BtnUpdateBack.TabIndex = 31;
             BtnUpdateBack.Text = "Back";
             BtnUpdateBack.UseVisualStyleBackColor = true;
+            BtnUpdateBack.Click += BtnUpdateBack_Click;
             // 
             // BtnUpdateMovie
             // 
@@ -64,6 +65,7 @@
             BtnUpdateMovie.TabIndex = 29;
             BtnUpdateMovie.Text = "Update in Database";
             BtnUpdateMovie.UseVisualStyleBackColor = true;
+            BtnUpdateMovie.Click += BtnUpdateMovie_Click;
             // 
             // TxtUpdateStatus
             // 

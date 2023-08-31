@@ -40,6 +40,7 @@
             TxtSeeRelease = new TextBox();
             TxtSeeRuntime = new TextBox();
             LbMovieActors = new ListBox();
+            label8 = new Label();
             SuspendLayout();
             // 
             // TxtSeeTitle
@@ -97,12 +98,13 @@
             // 
             // BtnSeeBack
             // 
-            BtnSeeBack.Location = new Point(504, 228);
+            BtnSeeBack.Location = new Point(504, 233);
             BtnSeeBack.Name = "BtnSeeBack";
             BtnSeeBack.Size = new Size(75, 37);
             BtnSeeBack.TabIndex = 26;
             BtnSeeBack.Text = "Back";
             BtnSeeBack.UseVisualStyleBackColor = true;
+            BtnSeeBack.Click += BtnSeeBack_Click;
             // 
             // TxtSeeGenre
             // 
@@ -140,16 +142,26 @@
             // 
             LbMovieActors.FormattingEnabled = true;
             LbMovieActors.ItemHeight = 20;
-            LbMovieActors.Location = new Point(340, 23);
+            LbMovieActors.Location = new Point(340, 38);
             LbMovieActors.Name = "LbMovieActors";
             LbMovieActors.Size = new Size(239, 184);
             LbMovieActors.TabIndex = 31;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new Point(340, 15);
+            label8.Name = "label8";
+            label8.Size = new Size(54, 20);
+            label8.TabIndex = 32;
+            label8.Text = "Actors:";
             // 
             // SeeMovie
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(607, 288);
+            Controls.Add(label8);
             Controls.Add(LbMovieActors);
             Controls.Add(TxtSeeRuntime);
             Controls.Add(TxtSeeRelease);
@@ -189,5 +201,6 @@
         private TextBox TxtSeeRelease;
         private TextBox TxtSeeRuntime;
         private ListBox LbMovieActors;
+        private Label label8;
     }
 }

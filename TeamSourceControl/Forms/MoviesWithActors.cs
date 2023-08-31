@@ -15,6 +15,18 @@ namespace TeamSourceControl.Forms
         public MoviesWithActors()
         {
             InitializeComponent();
+            // populate movie combobox here
+            // populate actor combobox here
+        }
+
+        private void BtnPair_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void BtnMovieActorBack_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

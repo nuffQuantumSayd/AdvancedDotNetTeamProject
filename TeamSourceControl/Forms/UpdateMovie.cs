@@ -16,5 +16,15 @@ namespace TeamSourceControl.Forms
         {
             InitializeComponent();
         }
+
+        private void BtnUpdateMovie_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void BtnUpdateBack_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

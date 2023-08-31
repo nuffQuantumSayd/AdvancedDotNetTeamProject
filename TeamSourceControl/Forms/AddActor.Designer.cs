@@ -88,6 +88,7 @@
             BtnAddActor.TabIndex = 14;
             BtnAddActor.Text = "Add to Database";
             BtnAddActor.UseVisualStyleBackColor = true;
+            BtnAddActor.Click += BtnAddActor_Click;
             // 
             // BtnAddActorClear
             // 
@@ -97,6 +98,7 @@
             BtnAddActorClear.TabIndex = 15;
             BtnAddActorClear.Text = "Clear Form";
             BtnAddActorClear.UseVisualStyleBackColor = true;
+            BtnAddActorClear.Click += BtnAddActorClear_Click;
             // 
             // BtnAddActorBack
             // 
@@ -106,6 +108,7 @@
             BtnAddActorBack.TabIndex = 16;
             BtnAddActorBack.Text = "Back";
             BtnAddActorBack.UseVisualStyleBackColor = true;
+            BtnAddActorBack.Click += BtnAddActorBack_Click;
             // 
             // AddActor
             // 

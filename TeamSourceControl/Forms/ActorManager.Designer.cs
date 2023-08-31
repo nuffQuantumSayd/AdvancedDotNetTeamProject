@@ -61,6 +61,7 @@
             BtnAddActor.TabIndex = 3;
             BtnAddActor.Text = "Add Actor";
             BtnAddActor.UseVisualStyleBackColor = true;
+            BtnAddActor.Click += BtnAddActor_Click;
             // 
             // BtnSeeActor
             // 
@@ -70,6 +71,7 @@
             BtnSeeActor.TabIndex = 7;
             BtnSeeActor.Text = "See Actor Info";
             BtnSeeActor.UseVisualStyleBackColor = true;
+            BtnSeeActor.Click += BtnSeeActor_Click;
             // 
             // BtnDeleteActor
             // 
@@ -79,6 +81,7 @@
             BtnDeleteActor.TabIndex = 5;
             BtnDeleteActor.Text = "Delete Actor";
             BtnDeleteActor.UseVisualStyleBackColor = true;
+            BtnDeleteActor.Click += BtnDeleteActor_Click;
             // 
             // BtnUpdateActor
             // 
@@ -88,6 +91,7 @@
             BtnUpdateActor.TabIndex = 4;
             BtnUpdateActor.Text = "Update Actor";
             BtnUpdateActor.UseVisualStyleBackColor = true;
+            BtnUpdateActor.Click += BtnUpdateActor_Click;
             // 
             // CbSortActor
             // 
@@ -123,6 +127,7 @@
             BtnAddActorBack.TabIndex = 17;
             BtnAddActorBack.Text = "Back";
             BtnAddActorBack.UseVisualStyleBackColor = true;
+            BtnAddActorBack.Click += BtnAddActorBack_Click;
             // 
             // ActorManager
             // 

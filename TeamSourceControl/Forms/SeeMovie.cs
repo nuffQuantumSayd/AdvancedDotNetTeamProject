@@ -15,6 +15,12 @@ namespace TeamSourceControl.Forms
         public SeeMovie()
         {
             InitializeComponent();
+            // populate list of actors in movie here
+        }
+
+        private void BtnSeeBack_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

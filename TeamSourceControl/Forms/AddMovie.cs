@@ -16,5 +16,22 @@ namespace TeamSourceControl.Forms
         {
             InitializeComponent();
         }
+
+        private void BtnAddMovie_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void BtnAddClear_Click(object sender, EventArgs e)
+        {
+            // clears form
+            Controls.Clear();
+            InitializeComponent();
+        }
+
+        private void BtnAddBack_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

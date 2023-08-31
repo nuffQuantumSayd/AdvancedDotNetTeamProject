@@ -16,5 +16,23 @@ namespace TeamSourceControl.Forms
         {
             InitializeComponent();
         }
+
+        private void BtnUpdateActor_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void BtnUpdateActorClear_Click(object sender, EventArgs e)
+        {
+            // clears form
+            TxtUpdateFName.Clear();
+            TxtUpdateLName.Clear();
+            ChkUpdateFollow.Checked = false;
+        }
+
+        private void BtnUpdateActorBack_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

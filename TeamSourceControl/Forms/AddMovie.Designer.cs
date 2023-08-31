@@ -174,6 +174,7 @@
             BtnAddMovie.TabIndex = 13;
             BtnAddMovie.Text = "Add to Database";
             BtnAddMovie.UseVisualStyleBackColor = true;
+            BtnAddMovie.Click += BtnAddMovie_Click;
             // 
             // BtnAddClear
             // 
@@ -183,6 +184,7 @@
             BtnAddClear.TabIndex = 14;
             BtnAddClear.Text = "Clear Form";
             BtnAddClear.UseVisualStyleBackColor = true;
+            BtnAddClear.Click += BtnAddClear_Click;
             // 
             // BtnAddBack
             // 
@@ -192,6 +194,7 @@
             BtnAddBack.TabIndex = 15;
             BtnAddBack.Text = "Back";
             BtnAddBack.UseVisualStyleBackColor = true;
+            BtnAddBack.Click += BtnAddBack_Click;
             // 
             // AddMovie
             // 

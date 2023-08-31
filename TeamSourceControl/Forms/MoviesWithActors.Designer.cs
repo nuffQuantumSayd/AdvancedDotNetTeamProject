@@ -78,6 +78,7 @@
             BtnPair.TabIndex = 5;
             BtnPair.Text = "Pair Together";
             BtnPair.UseVisualStyleBackColor = true;
+            BtnPair.Click += BtnPair_Click;
             // 
             // BtnMovieActorBack
             // 
@@ -87,6 +88,7 @@
             BtnMovieActorBack.TabIndex = 17;
             BtnMovieActorBack.Text = "Back";
             BtnMovieActorBack.UseVisualStyleBackColor = true;
+            BtnMovieActorBack.Click += BtnMovieActorBack_Click;
             // 
             // MoviesWithActors
             // 

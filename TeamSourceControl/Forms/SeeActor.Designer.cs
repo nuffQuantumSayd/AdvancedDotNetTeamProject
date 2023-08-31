@@ -61,6 +61,7 @@
             BtnSeeActorBack.TabIndex = 38;
             BtnSeeActorBack.Text = "Back";
             BtnSeeActorBack.UseVisualStyleBackColor = true;
+            BtnSeeActorBack.Click += BtnSeeActorBack_Click;
             // 
             // TxtSeeName
             // 

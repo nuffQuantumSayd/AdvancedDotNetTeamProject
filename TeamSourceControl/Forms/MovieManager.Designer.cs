@@ -75,6 +75,7 @@
             BtnAdd.TabIndex = 3;
             BtnAdd.Text = "Add Movie";
             BtnAdd.UseVisualStyleBackColor = true;
+            BtnAdd.Click += BtnAdd_Click;
             // 
             // BtnUpdate
             // 
@@ -84,6 +85,7 @@
             BtnUpdate.TabIndex = 4;
             BtnUpdate.Text = "Update Movie";
             BtnUpdate.UseVisualStyleBackColor = true;
+            BtnUpdate.Click += BtnUpdate_Click;
             // 
             // BtnDelete
             // 
@@ -93,6 +95,7 @@
             BtnDelete.TabIndex = 5;
             BtnDelete.Text = "Delete Movie";
             BtnDelete.UseVisualStyleBackColor = true;
+            BtnDelete.Click += BtnDelete_Click;
             // 
             // BtnMovieWithActor
             // 
@@ -102,6 +105,7 @@
             BtnMovieWithActor.TabIndex = 6;
             BtnMovieWithActor.Text = "Movie Actor Pairing";
             BtnMovieWithActor.UseVisualStyleBackColor = true;
+            BtnMovieWithActor.Click += BtnMovieWithActor_Click;
             // 
             // BtnSee
             // 
@@ -111,6 +115,7 @@
             BtnSee.TabIndex = 7;
             BtnSee.Text = "See Movie Info";
             BtnSee.UseVisualStyleBackColor = true;
+            BtnSee.Click += BtnSee_Click;
             // 
             // groupBox1
             // 
@@ -133,6 +138,7 @@
             BtnActor.TabIndex = 9;
             BtnActor.Text = "Manage Actors";
             BtnActor.UseVisualStyleBackColor = true;
+            BtnActor.Click += BtnActor_Click;
             // 
             // MovieManager
             // 
