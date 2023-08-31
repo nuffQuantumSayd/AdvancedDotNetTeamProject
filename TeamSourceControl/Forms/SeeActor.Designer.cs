@@ -29,33 +29,25 @@
         private void InitializeComponent()
         {
             LbActorMovies = new ListBox();
-            TxtSeeFollowing = new TextBox();
             BtnSeeActorBack = new Button();
             TxtSeeName = new TextBox();
-            label2 = new Label();
             label1 = new Label();
+            checkBox1 = new CheckBox();
+            label2 = new Label();
             SuspendLayout();
             // 
             // LbActorMovies
             // 
             LbActorMovies.FormattingEnabled = true;
             LbActorMovies.ItemHeight = 20;
-            LbActorMovies.Location = new Point(55, 114);
+            LbActorMovies.Location = new Point(38, 91);
             LbActorMovies.Name = "LbActorMovies";
             LbActorMovies.Size = new Size(239, 184);
             LbActorMovies.TabIndex = 43;
             // 
-            // TxtSeeFollowing
-            // 
-            TxtSeeFollowing.Enabled = false;
-            TxtSeeFollowing.Location = new Point(111, 62);
-            TxtSeeFollowing.Name = "TxtSeeFollowing";
-            TxtSeeFollowing.Size = new Size(183, 27);
-            TxtSeeFollowing.TabIndex = 39;
-            // 
             // BtnSeeActorBack
             // 
-            BtnSeeActorBack.Location = new Point(219, 323);
+            BtnSeeActorBack.Location = new Point(316, 238);
             BtnSeeActorBack.Name = "BtnSeeActorBack";
             BtnSeeActorBack.Size = new Size(75, 37);
             BtnSeeActorBack.TabIndex = 38;
@@ -66,39 +58,50 @@
             // TxtSeeName
             // 
             TxtSeeName.Enabled = false;
-            TxtSeeName.Location = new Point(111, 29);
+            TxtSeeName.Location = new Point(94, 24);
             TxtSeeName.Name = "TxtSeeName";
             TxtSeeName.Size = new Size(183, 27);
             TxtSeeName.TabIndex = 37;
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(28, 65);
-            label2.Name = "label2";
-            label2.Size = new Size(77, 20);
-            label2.TabIndex = 33;
-            label2.Text = "Following:";
-            // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(53, 32);
+            label1.Location = new Point(36, 27);
             label1.Name = "label1";
             label1.Size = new Size(52, 20);
             label1.TabIndex = 32;
             label1.Text = "Name:";
             // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.Enabled = false;
+            checkBox1.Location = new Point(293, 27);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(96, 24);
+            checkBox1.TabIndex = 44;
+            checkBox1.Text = "Following";
+            checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(38, 68);
+            label2.Name = "label2";
+            label2.Size = new Size(60, 20);
+            label2.TabIndex = 45;
+            label2.Text = "Seen in:";
+            // 
             // SeeActor
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(322, 372);
+            ClientSize = new Size(424, 301);
+            Controls.Add(label2);
+            Controls.Add(checkBox1);
             Controls.Add(LbActorMovies);
-            Controls.Add(TxtSeeFollowing);
             Controls.Add(BtnSeeActorBack);
             Controls.Add(TxtSeeName);
-            Controls.Add(label2);
             Controls.Add(label1);
             Name = "SeeActor";
             Text = "SeeActor";
@@ -109,10 +112,10 @@
         #endregion
 
         private ListBox LbActorMovies;
-        private TextBox TxtSeeFollowing;
         private Button BtnSeeActorBack;
         private TextBox TxtSeeName;
-        private Label label2;
         private Label label1;
+        private CheckBox checkBox1;
+        private Label label2;
     }
 }
