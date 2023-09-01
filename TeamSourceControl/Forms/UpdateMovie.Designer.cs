@@ -28,15 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            BtnUpdateBack = new Button();
             BtnUpdateMovie = new Button();
-            TxtUpdateStatus = new ComboBox();
+            CbUpdateStatus = new ComboBox();
             DtpUpdateRelease = new DateTimePicker();
             label7 = new Label();
             label6 = new Label();
             NudUpdateMinutes = new NumericUpDown();
             NudUpdateHours = new NumericUpDown();
-            TxtUpdateGenre = new ComboBox();
+            CbUpdateGenre = new ComboBox();
             TxtUpdateTitle = new TextBox();
             label5 = new Label();
             label4 = new Label();
@@ -47,33 +46,23 @@
             ((System.ComponentModel.ISupportInitialize)NudUpdateHours).BeginInit();
             SuspendLayout();
             // 
-            // BtnUpdateBack
-            // 
-            BtnUpdateBack.Location = new Point(427, 218);
-            BtnUpdateBack.Name = "BtnUpdateBack";
-            BtnUpdateBack.Size = new Size(75, 37);
-            BtnUpdateBack.TabIndex = 31;
-            BtnUpdateBack.Text = "Back";
-            BtnUpdateBack.UseVisualStyleBackColor = true;
-            BtnUpdateBack.Click += BtnUpdateBack_Click;
-            // 
             // BtnUpdateMovie
             // 
-            BtnUpdateMovie.Location = new Point(334, 51);
+            BtnUpdateMovie.Location = new Point(347, 103);
             BtnUpdateMovie.Name = "BtnUpdateMovie";
-            BtnUpdateMovie.Size = new Size(168, 74);
+            BtnUpdateMovie.Size = new Size(168, 66);
             BtnUpdateMovie.TabIndex = 29;
             BtnUpdateMovie.Text = "Update in Database";
             BtnUpdateMovie.UseVisualStyleBackColor = true;
             BtnUpdateMovie.Click += BtnUpdateMovie_Click;
             // 
-            // TxtUpdateStatus
+            // CbUpdateStatus
             // 
-            TxtUpdateStatus.FormattingEnabled = true;
-            TxtUpdateStatus.Location = new Point(123, 123);
-            TxtUpdateStatus.Name = "TxtUpdateStatus";
-            TxtUpdateStatus.Size = new Size(183, 28);
-            TxtUpdateStatus.TabIndex = 28;
+            CbUpdateStatus.FormattingEnabled = true;
+            CbUpdateStatus.Location = new Point(123, 123);
+            CbUpdateStatus.Name = "CbUpdateStatus";
+            CbUpdateStatus.Size = new Size(183, 28);
+            CbUpdateStatus.TabIndex = 28;
             // 
             // DtpUpdateRelease
             // 
@@ -118,13 +107,13 @@
             NudUpdateHours.Size = new Size(54, 27);
             NudUpdateHours.TabIndex = 23;
             // 
-            // TxtUpdateGenre
+            // CbUpdateGenre
             // 
-            TxtUpdateGenre.FormattingEnabled = true;
-            TxtUpdateGenre.Location = new Point(123, 70);
-            TxtUpdateGenre.Name = "TxtUpdateGenre";
-            TxtUpdateGenre.Size = new Size(183, 28);
-            TxtUpdateGenre.TabIndex = 22;
+            CbUpdateGenre.FormattingEnabled = true;
+            CbUpdateGenre.Location = new Point(123, 70);
+            CbUpdateGenre.Name = "CbUpdateGenre";
+            CbUpdateGenre.Size = new Size(183, 28);
+            CbUpdateGenre.TabIndex = 22;
             // 
             // TxtUpdateTitle
             // 
@@ -183,15 +172,14 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(527, 273);
-            Controls.Add(BtnUpdateBack);
             Controls.Add(BtnUpdateMovie);
-            Controls.Add(TxtUpdateStatus);
+            Controls.Add(CbUpdateStatus);
             Controls.Add(DtpUpdateRelease);
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(NudUpdateMinutes);
             Controls.Add(NudUpdateHours);
-            Controls.Add(TxtUpdateGenre);
+            Controls.Add(CbUpdateGenre);
             Controls.Add(TxtUpdateTitle);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -207,17 +195,15 @@
         }
 
         #endregion
-
-        private Button BtnUpdateBack;
         private Button BtnClear;
         private Button BtnUpdateMovie;
-        private ComboBox TxtUpdateStatus;
+        private ComboBox CbUpdateStatus;
         private DateTimePicker DtpUpdateRelease;
         private Label label7;
         private Label label6;
         private NumericUpDown NudUpdateMinutes;
         private NumericUpDown NudUpdateHours;
-        private ComboBox TxtUpdateGenre;
+        private ComboBox CbUpdateGenre;
         private TextBox TxtUpdateTitle;
         private Label label5;
         private Label label4;

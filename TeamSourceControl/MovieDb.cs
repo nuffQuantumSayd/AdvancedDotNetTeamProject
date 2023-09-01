@@ -41,7 +41,7 @@ namespace TeamSourceControl
             updateCmd.Connection = con;
 
             // update query
-            updateCmd.CommandText = "UPDATE Movies SET MovieName = @title, MovieGenre = @genre, MovieStatus = @status, ReleaseYear = @release, RunTime = @runtime WHERE MovieId = @id)";
+            updateCmd.CommandText = "UPDATE Movies SET MovieName = @title, MovieGenre = @genre, MovieStatus = @status, ReleaseYear = @release, RunTime = @runtime WHERE MovieId = @id";
 
             updateCmd.Parameters.AddWithValue("@id", m.MovieId);
             updateCmd.Parameters.AddWithValue("@title", m.Title);
@@ -64,7 +64,7 @@ namespace TeamSourceControl
             deleteCmd.Connection = con;
 
             // update query
-            deleteCmd.CommandText = "DELETE FROM Movies WHERE MovieId = @id)";
+            deleteCmd.CommandText = "DELETE FROM Movies WHERE MovieId = @id";
             deleteCmd.Parameters.AddWithValue("@id", m.MovieId);
 
             // execution
