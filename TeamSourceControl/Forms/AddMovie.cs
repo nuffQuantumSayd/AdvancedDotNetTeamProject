@@ -38,10 +38,5 @@ namespace TeamSourceControl.Forms
             Controls.Clear();
             InitializeComponent();
         }
-
-        private void BtnAddBack_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
     }
 }

@@ -23,10 +23,5 @@ namespace TeamSourceControl.Forms
         {
             throw new NotImplementedException();
         }
-
-        private void BtnMovieActorBack_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
     }
 }

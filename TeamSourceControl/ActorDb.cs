@@ -39,7 +39,7 @@ namespace TeamSourceControl
             updateCmd.Connection = con;
 
             // update query
-            updateCmd.CommandText = "UPDATE Actors SET ActorFirstName = @fname, ActorLastName = @lname, ActorFollowed = @followed WHERE ActorId = @id)";
+            updateCmd.CommandText = "UPDATE Actors SET ActorFirstName = @fname, ActorLastName = @lname, ActorFollowed = @followed WHERE ActorId = @id";
 
             updateCmd.Parameters.AddWithValue("@id", a.ActorId);
             updateCmd.Parameters.AddWithValue("@fname", a.FirstName);
@@ -60,7 +60,7 @@ namespace TeamSourceControl
             deleteCmd.Connection = con;
 
             // update query
-            deleteCmd.CommandText = "DELETE FROM Actors WHERE ActorId = @id)";
+            deleteCmd.CommandText = "DELETE FROM Actors WHERE ActorId = @id";
             deleteCmd.Parameters.AddWithValue("@id", a.ActorId);
 
             // execution

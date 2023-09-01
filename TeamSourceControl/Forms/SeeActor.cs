@@ -7,20 +7,31 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TeamSourceControl.Models;
 
 namespace TeamSourceControl.Forms
 {
     public partial class SeeActor : Form
     {
-        public SeeActor()
+        public SeeActor(Actor a)
         {
             InitializeComponent();
+            PopulateControls(a);
             // populate list of movies actor is in here
         }
 
-        private void BtnSeeActorBack_Click(object sender, EventArgs e)
+        private void PopulateControls(Actor a)
         {
-            Close();
+            // setting controls to object's current property values
+            TxtSeeName.Text = $"{a.FirstName} {a.LastName}";
+            if (a.Followed == true)
+            {
+                ChkSeeFollow.Checked = true;
+            }
+            else
+            {
+                ChkSeeFollow.Checked = false;
+            }
         }
     }
 }
