@@ -36,7 +36,6 @@
             CbSortActor = new ComboBox();
             label1 = new Label();
             LbActorList = new ListBox();
-            BtnAddActorBack = new Button();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -46,7 +45,7 @@
             groupBox1.Controls.Add(BtnSeeActor);
             groupBox1.Controls.Add(BtnDeleteActor);
             groupBox1.Controls.Add(BtnUpdateActor);
-            groupBox1.Location = new Point(389, 18);
+            groupBox1.Location = new Point(400, 77);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(219, 304);
             groupBox1.TabIndex = 13;
@@ -119,22 +118,11 @@
             LbActorList.Size = new Size(337, 324);
             LbActorList.TabIndex = 9;
             // 
-            // BtnAddActorBack
-            // 
-            BtnAddActorBack.Location = new Point(533, 364);
-            BtnAddActorBack.Name = "BtnAddActorBack";
-            BtnAddActorBack.Size = new Size(75, 37);
-            BtnAddActorBack.TabIndex = 17;
-            BtnAddActorBack.Text = "Back";
-            BtnAddActorBack.UseVisualStyleBackColor = true;
-            BtnAddActorBack.Click += BtnAddActorBack_Click;
-            // 
             // ActorManager
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(640, 418);
-            Controls.Add(BtnAddActorBack);
             Controls.Add(groupBox1);
             Controls.Add(CbSortActor);
             Controls.Add(label1);
@@ -156,6 +144,5 @@
         private ComboBox CbSortActor;
         private Label label1;
         private ListBox LbActorList;
-        private Button BtnAddActorBack;
     }
 }
