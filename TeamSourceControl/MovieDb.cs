@@ -60,16 +60,16 @@ namespace TeamSourceControl
         {
             // establishing connection and creating cmd
             SqlConnection con = new SqlConnection("Server=(localdb)\\mssqllocaldb;Initial Catalog=MoviesDatabase;Integrated Security=True");
-            SqlCommand updateCmd = new SqlCommand();
-            updateCmd.Connection = con;
+            SqlCommand deleteCmd = new SqlCommand();
+            deleteCmd.Connection = con;
 
             // update query
-            updateCmd.CommandText = "DELETE FROM Movies WHERE MovieId = @id)";
-            updateCmd.Parameters.AddWithValue("@id", m.MovieId);
+            deleteCmd.CommandText = "DELETE FROM Movies WHERE MovieId = @id)";
+            deleteCmd.Parameters.AddWithValue("@id", m.MovieId);
 
             // execution
             con.Open();
-            updateCmd.ExecuteNonQuery();
+            deleteCmd.ExecuteNonQuery();
             con.Close();
         }
 
