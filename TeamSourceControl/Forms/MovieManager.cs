@@ -38,7 +38,7 @@ namespace TeamSourceControl
             AddMovie addMovie = new AddMovie();
             addMovie.ShowDialog();
 
-            // re-populate movies
+            // populate movies again
             PopulateMovies();
         }
 
