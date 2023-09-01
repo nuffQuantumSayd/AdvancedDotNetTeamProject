@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            BtnUpdateBack = new Button();
             BtnUpdateMovie = new Button();
             CbUpdateStatus = new ComboBox();
             DtpUpdateRelease = new DateTimePicker();
@@ -47,21 +46,11 @@
             ((System.ComponentModel.ISupportInitialize)NudUpdateHours).BeginInit();
             SuspendLayout();
             // 
-            // BtnUpdateBack
-            // 
-            BtnUpdateBack.Location = new Point(427, 218);
-            BtnUpdateBack.Name = "BtnUpdateBack";
-            BtnUpdateBack.Size = new Size(75, 37);
-            BtnUpdateBack.TabIndex = 31;
-            BtnUpdateBack.Text = "Back";
-            BtnUpdateBack.UseVisualStyleBackColor = true;
-            BtnUpdateBack.Click += BtnUpdateBack_Click;
-            // 
             // BtnUpdateMovie
             // 
-            BtnUpdateMovie.Location = new Point(334, 51);
+            BtnUpdateMovie.Location = new Point(347, 103);
             BtnUpdateMovie.Name = "BtnUpdateMovie";
-            BtnUpdateMovie.Size = new Size(168, 74);
+            BtnUpdateMovie.Size = new Size(168, 66);
             BtnUpdateMovie.TabIndex = 29;
             BtnUpdateMovie.Text = "Update in Database";
             BtnUpdateMovie.UseVisualStyleBackColor = true;
@@ -183,7 +172,6 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(527, 273);
-            Controls.Add(BtnUpdateBack);
             Controls.Add(BtnUpdateMovie);
             Controls.Add(CbUpdateStatus);
             Controls.Add(DtpUpdateRelease);
@@ -207,8 +195,6 @@
         }
 
         #endregion
-
-        private Button BtnUpdateBack;
         private Button BtnClear;
         private Button BtnUpdateMovie;
         private ComboBox CbUpdateStatus;
