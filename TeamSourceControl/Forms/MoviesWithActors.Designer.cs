@@ -33,13 +33,12 @@
             label2 = new Label();
             label3 = new Label();
             BtnPair = new Button();
-            BtnMovieActorBack = new Button();
             SuspendLayout();
             // 
             // CbMovie
             // 
             CbMovie.FormattingEnabled = true;
-            CbMovie.Location = new Point(87, 28);
+            CbMovie.Location = new Point(91, 24);
             CbMovie.Name = "CbMovie";
             CbMovie.Size = new Size(151, 28);
             CbMovie.TabIndex = 0;
@@ -47,7 +46,7 @@
             // CbActor
             // 
             CbActor.FormattingEnabled = true;
-            CbActor.Location = new Point(87, 62);
+            CbActor.Location = new Point(91, 58);
             CbActor.Name = "CbActor";
             CbActor.Size = new Size(151, 28);
             CbActor.TabIndex = 1;
@@ -55,7 +54,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(28, 36);
+            label2.Location = new Point(32, 32);
             label2.Name = "label2";
             label2.Size = new Size(53, 20);
             label2.TabIndex = 3;
@@ -64,7 +63,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(33, 70);
+            label3.Location = new Point(37, 66);
             label3.Name = "label3";
             label3.Size = new Size(48, 20);
             label3.TabIndex = 4;
@@ -72,7 +71,7 @@
             // 
             // BtnPair
             // 
-            BtnPair.Location = new Point(33, 108);
+            BtnPair.Location = new Point(37, 104);
             BtnPair.Name = "BtnPair";
             BtnPair.Size = new Size(205, 47);
             BtnPair.TabIndex = 5;
@@ -80,22 +79,11 @@
             BtnPair.UseVisualStyleBackColor = true;
             BtnPair.Click += BtnPair_Click;
             // 
-            // BtnMovieActorBack
-            // 
-            BtnMovieActorBack.Location = new Point(271, 118);
-            BtnMovieActorBack.Name = "BtnMovieActorBack";
-            BtnMovieActorBack.Size = new Size(75, 37);
-            BtnMovieActorBack.TabIndex = 17;
-            BtnMovieActorBack.Text = "Back";
-            BtnMovieActorBack.UseVisualStyleBackColor = true;
-            BtnMovieActorBack.Click += BtnMovieActorBack_Click;
-            // 
             // MoviesWithActors
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(371, 174);
-            Controls.Add(BtnMovieActorBack);
+            ClientSize = new Size(274, 174);
             Controls.Add(BtnPair);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -114,6 +102,5 @@
         private Label label2;
         private Label label3;
         private Button BtnPair;
-        private Button BtnMovieActorBack;
     }
 }

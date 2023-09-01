@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TeamSourceControl.Models;
 
 namespace TeamSourceControl.Forms
 {
@@ -19,7 +20,22 @@ namespace TeamSourceControl.Forms
 
         private void BtnAddActor_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            string fname = TxtAddFName.Text;
+            string lname = TxtAddLName.Text;
+            bool followed;
+            if (ChkAddFollow.Checked == true)
+            {
+                followed = true;
+            }
+            else
+            {
+                followed = false;
+            }
+
+            Actor a = new Actor(fname, lname, followed);
+            ActorDb.Add(a);
+
+            MessageBox.Show("Actor added to database!");
         }
 
         private void BtnAddActorClear_Click(object sender, EventArgs e)
@@ -27,11 +43,6 @@ namespace TeamSourceControl.Forms
             // clears form
             Controls.Clear();
             InitializeComponent();
-        }
-
-        private void BtnAddActorBack_Click(object sender, EventArgs e)
-        {
-            Close();
         }
     }
 }

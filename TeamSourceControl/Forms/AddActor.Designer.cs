@@ -35,7 +35,6 @@
             TxtAddLName = new TextBox();
             BtnAddActor = new Button();
             BtnAddActorClear = new Button();
-            BtnAddActorBack = new Button();
             SuspendLayout();
             // 
             // label1
@@ -82,7 +81,7 @@
             // 
             // BtnAddActor
             // 
-            BtnAddActor.Location = new Point(197, 29);
+            BtnAddActor.Location = new Point(196, 39);
             BtnAddActor.Name = "BtnAddActor";
             BtnAddActor.Size = new Size(168, 46);
             BtnAddActor.TabIndex = 14;
@@ -92,7 +91,7 @@
             // 
             // BtnAddActorClear
             // 
-            BtnAddActorClear.Location = new Point(197, 81);
+            BtnAddActorClear.Location = new Point(196, 93);
             BtnAddActorClear.Name = "BtnAddActorClear";
             BtnAddActorClear.Size = new Size(168, 46);
             BtnAddActorClear.TabIndex = 15;
@@ -100,22 +99,11 @@
             BtnAddActorClear.UseVisualStyleBackColor = true;
             BtnAddActorClear.Click += BtnAddActorClear_Click;
             // 
-            // BtnAddActorBack
-            // 
-            BtnAddActorBack.Location = new Point(290, 145);
-            BtnAddActorBack.Name = "BtnAddActorBack";
-            BtnAddActorBack.Size = new Size(75, 37);
-            BtnAddActorBack.TabIndex = 16;
-            BtnAddActorBack.Text = "Back";
-            BtnAddActorBack.UseVisualStyleBackColor = true;
-            BtnAddActorBack.Click += BtnAddActorBack_Click;
-            // 
             // AddActor
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(398, 204);
-            Controls.Add(BtnAddActorBack);
             Controls.Add(BtnAddActorClear);
             Controls.Add(BtnAddActor);
             Controls.Add(TxtAddLName);
@@ -138,6 +126,5 @@
         private TextBox TxtAddLName;
         private Button BtnAddActor;
         private Button BtnAddActorClear;
-        private Button BtnAddActorBack;
     }
 }

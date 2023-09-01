@@ -44,7 +44,6 @@
             fileSystemWatcher1 = new FileSystemWatcher();
             BtnAddMovie = new Button();
             BtnAddClear = new Button();
-            BtnAddBack = new Button();
             ((System.ComponentModel.ISupportInitialize)NudAddHours).BeginInit();
             ((System.ComponentModel.ISupportInitialize)NudAddMinutes).BeginInit();
             ((System.ComponentModel.ISupportInitialize)fileSystemWatcher1).BeginInit();
@@ -168,7 +167,7 @@
             // 
             // BtnAddMovie
             // 
-            BtnAddMovie.Location = new Point(341, 33);
+            BtnAddMovie.Location = new Point(335, 72);
             BtnAddMovie.Name = "BtnAddMovie";
             BtnAddMovie.Size = new Size(168, 46);
             BtnAddMovie.TabIndex = 13;
@@ -178,7 +177,7 @@
             // 
             // BtnAddClear
             // 
-            BtnAddClear.Location = new Point(341, 93);
+            BtnAddClear.Location = new Point(335, 132);
             BtnAddClear.Name = "BtnAddClear";
             BtnAddClear.Size = new Size(168, 46);
             BtnAddClear.TabIndex = 14;
@@ -186,22 +185,11 @@
             BtnAddClear.UseVisualStyleBackColor = true;
             BtnAddClear.Click += BtnAddClear_Click;
             // 
-            // BtnAddBack
-            // 
-            BtnAddBack.Location = new Point(428, 212);
-            BtnAddBack.Name = "BtnAddBack";
-            BtnAddBack.Size = new Size(75, 37);
-            BtnAddBack.TabIndex = 15;
-            BtnAddBack.Text = "Back";
-            BtnAddBack.UseVisualStyleBackColor = true;
-            BtnAddBack.Click += BtnAddBack_Click;
-            // 
             // AddMovie
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(528, 273);
-            Controls.Add(BtnAddBack);
             Controls.Add(BtnAddClear);
             Controls.Add(BtnAddMovie);
             Controls.Add(CbAddStatus);
@@ -243,7 +231,6 @@
         private ComboBox CbAddStatus;
         private FileSystemWatcher fileSystemWatcher1;
         private Button BtnAddMovie;
-        private Button BtnAddBack;
         private Button BtnAddClear;
     }
 }

@@ -7,31 +7,56 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TeamSourceControl.Models;
 
 namespace TeamSourceControl.Forms
 {
     public partial class UpdateActor : Form
     {
-        public UpdateActor()
+        private Actor actorToUpdate;
+        public UpdateActor(Actor a)
         {
             InitializeComponent();
+            PopulateControls(a);
+        }
+
+        private void PopulateControls(Actor a)
+        {
+            TxtUpdateFName.Text = a.FirstName;
+            TxtUpdateLName.Text = a.LastName;
+            if (a.Followed == true)
+            {
+                ChkUpdateFollow.Checked = true;
+            }
+            else
+            {
+                ChkUpdateFollow.Checked = false;
+            }
+
+            actorToUpdate = a;
+
         }
 
         private void BtnUpdateActor_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException();
-        }
+            string fname = TxtUpdateFName.Text;
+            string lname = TxtUpdateLName.Text;
+            bool followed;
+            if (ChkUpdateFollow.Checked == true)
+            {
+                followed = true;
+            }
+            else
+            {
+                followed = false;
+            }
 
-        private void BtnUpdateActorClear_Click(object sender, EventArgs e)
-        {
-            // clears form
-            TxtUpdateFName.Clear();
-            TxtUpdateLName.Clear();
-            ChkUpdateFollow.Checked = false;
-        }
+            Actor modifiedActor = new Actor(fname, lname, followed);
+            modifiedActor.ActorId = actorToUpdate.ActorId;
 
-        private void BtnUpdateActorBack_Click(object sender, EventArgs e)
-        {
+            ActorDb.Update(modifiedActor);
+
+            MessageBox.Show("Actor updated in database!");
             Close();
         }
     }

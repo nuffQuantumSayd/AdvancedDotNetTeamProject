@@ -40,4 +40,9 @@ public partial class Actor
         LastName = lname;
         Followed = followed;
     }
+
+    public override string ToString()
+    {
+        return FirstName + " " + LastName;
+    }
 }

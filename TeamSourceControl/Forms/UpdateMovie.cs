@@ -53,10 +53,5 @@ namespace TeamSourceControl.Forms
             MessageBox.Show("Movie updated in database!");
             Close();
         }
-
-        private void BtnUpdateBack_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
     }
 }

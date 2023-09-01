@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            BtnUpdateActorBack = new Button();
-            BtnUpdateActorClear = new Button();
             BtnUpdateActor = new Button();
             TxtUpdateLName = new TextBox();
             TxtUpdateFName = new TextBox();
@@ -38,33 +36,13 @@
             label1 = new Label();
             SuspendLayout();
             // 
-            // BtnUpdateActorBack
-            // 
-            BtnUpdateActorBack.Location = new Point(291, 146);
-            BtnUpdateActorBack.Name = "BtnUpdateActorBack";
-            BtnUpdateActorBack.Size = new Size(75, 37);
-            BtnUpdateActorBack.TabIndex = 24;
-            BtnUpdateActorBack.Text = "Back";
-            BtnUpdateActorBack.UseVisualStyleBackColor = true;
-            BtnUpdateActorBack.Click += BtnUpdateActorBack_Click;
-            // 
-            // BtnUpdateActorClear
-            // 
-            BtnUpdateActorClear.Location = new Point(198, 82);
-            BtnUpdateActorClear.Name = "BtnUpdateActorClear";
-            BtnUpdateActorClear.Size = new Size(168, 46);
-            BtnUpdateActorClear.TabIndex = 23;
-            BtnUpdateActorClear.Text = "Clear Form";
-            BtnUpdateActorClear.UseVisualStyleBackColor = true;
-            BtnUpdateActorClear.Click += BtnUpdateActorClear_Click;
-            // 
             // BtnUpdateActor
             // 
-            BtnUpdateActor.Location = new Point(198, 30);
+            BtnUpdateActor.Location = new Point(198, 63);
             BtnUpdateActor.Name = "BtnUpdateActor";
-            BtnUpdateActor.Size = new Size(168, 46);
+            BtnUpdateActor.Size = new Size(168, 63);
             BtnUpdateActor.TabIndex = 22;
-            BtnUpdateActor.Text = "Add to Database";
+            BtnUpdateActor.Text = "Update in Database";
             BtnUpdateActor.UseVisualStyleBackColor = true;
             BtnUpdateActor.Click += BtnUpdateActor_Click;
             // 
@@ -115,8 +93,6 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(397, 205);
-            Controls.Add(BtnUpdateActorBack);
-            Controls.Add(BtnUpdateActorClear);
             Controls.Add(BtnUpdateActor);
             Controls.Add(TxtUpdateLName);
             Controls.Add(TxtUpdateFName);
@@ -130,9 +106,6 @@
         }
 
         #endregion
-
-        private Button BtnUpdateActorBack;
-        private Button BtnUpdateActorClear;
         private Button BtnUpdateActor;
         private TextBox TxtUpdateLName;
         private TextBox TxtUpdateFName;
