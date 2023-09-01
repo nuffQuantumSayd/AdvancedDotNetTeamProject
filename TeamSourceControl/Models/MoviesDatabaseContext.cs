@@ -31,10 +31,10 @@ public partial class MoviesDatabaseContext : DbContext
         {
             entity.HasKey(e => e.ActorId).HasName("PK__Actors__57B3EA4B4D9AE7A8");
 
-            entity.Property(e => e.ActorFirstName)
+            entity.Property(e => e.FirstName)
                 .HasMaxLength(30)
                 .IsUnicode(false);
-            entity.Property(e => e.ActorLastName)
+            entity.Property(e => e.LastName)
                 .HasMaxLength(40)
                 .IsUnicode(false);
         });
@@ -43,16 +43,16 @@ public partial class MoviesDatabaseContext : DbContext
         {
             entity.HasKey(e => e.MovieId).HasName("PK__Movies__4BD2941ADFEF8AD8");
 
-            entity.Property(e => e.MovieGenre)
+            entity.Property(e => e.Genre)
                 .HasMaxLength(10)
                 .IsUnicode(false);
-            entity.Property(e => e.MovieName)
+            entity.Property(e => e.Title)
                 .HasMaxLength(50)
                 .IsUnicode(false);
-            entity.Property(e => e.MovieStatus)
+            entity.Property(e => e.Status)
                 .HasMaxLength(9)
                 .IsUnicode(false);
-            entity.Property(e => e.ReleaseYear).HasColumnType("smalldatetime");
+            entity.Property(e => e.ReleaseDate).HasColumnType("smalldatetime");
         });
 
         modelBuilder.Entity<MoviesWithActor>(entity =>
