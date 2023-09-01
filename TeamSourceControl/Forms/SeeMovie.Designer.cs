@@ -34,7 +34,6 @@
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
-            BtnSeeBack = new Button();
             TxtSeeGenre = new TextBox();
             TxtSeeStatus = new TextBox();
             TxtSeeRelease = new TextBox();
@@ -96,16 +95,6 @@
             label1.TabIndex = 13;
             label1.Text = "Title:";
             // 
-            // BtnSeeBack
-            // 
-            BtnSeeBack.Location = new Point(504, 233);
-            BtnSeeBack.Name = "BtnSeeBack";
-            BtnSeeBack.Size = new Size(75, 37);
-            BtnSeeBack.TabIndex = 26;
-            BtnSeeBack.Text = "Back";
-            BtnSeeBack.UseVisualStyleBackColor = true;
-            BtnSeeBack.Click += BtnSeeBack_Click;
-            // 
             // TxtSeeGenre
             // 
             TxtSeeGenre.Enabled = false;
@@ -142,15 +131,15 @@
             // 
             LbMovieActors.FormattingEnabled = true;
             LbMovieActors.ItemHeight = 20;
-            LbMovieActors.Location = new Point(340, 38);
+            LbMovieActors.Location = new Point(340, 58);
             LbMovieActors.Name = "LbMovieActors";
-            LbMovieActors.Size = new Size(239, 184);
+            LbMovieActors.Size = new Size(239, 204);
             LbMovieActors.TabIndex = 31;
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(340, 15);
+            label8.Location = new Point(340, 30);
             label8.Name = "label8";
             label8.Size = new Size(54, 20);
             label8.TabIndex = 32;
@@ -167,7 +156,6 @@
             Controls.Add(TxtSeeRelease);
             Controls.Add(TxtSeeStatus);
             Controls.Add(TxtSeeGenre);
-            Controls.Add(BtnSeeBack);
             Controls.Add(TxtSeeTitle);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -195,7 +183,6 @@
         private Label label3;
         private Label label2;
         private Label label1;
-        private Button BtnSeeBack;
         private TextBox TxtSeeGenre;
         private TextBox TxtSeeStatus;
         private TextBox TxtSeeRelease;

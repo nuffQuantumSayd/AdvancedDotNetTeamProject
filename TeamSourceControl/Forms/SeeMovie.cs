@@ -7,20 +7,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TeamSourceControl.Models;
 
 namespace TeamSourceControl.Forms
 {
     public partial class SeeMovie : Form
     {
-        public SeeMovie()
+        public SeeMovie(Movie m)
         {
             InitializeComponent();
+            PopulateControls(m);
             // populate list of actors in movie here
         }
 
-        private void BtnSeeBack_Click(object sender, EventArgs e)
+        private void PopulateControls(Movie m)
         {
-            Close();
+            // setting controls to object's current property values
+            TxtSeeTitle.Text = m.Title;
+            TxtSeeGenre.Text = m.Genre;
+            TxtSeeStatus.Text = m.Status;
+            TxtSeeRelease.Text = m.ReleaseDate.ToString("MMMM d, yyyy");
+            TxtSeeRuntime.Text = $"{m.RunTime.Hours} hours, {m.RunTime.Minutes} minutes";
         }
     }
 }
